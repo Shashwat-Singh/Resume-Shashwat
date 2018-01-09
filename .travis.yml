@@ -4,7 +4,7 @@ sudo: required
 language: node_js
 node_js:
   - "stable"
-  addons:
+addons:
   sonarcloud:
     organization: "shashwat-singh-github"
     token:
