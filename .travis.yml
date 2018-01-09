@@ -1,3 +1,14 @@
 language: node_js
 node_js:
   - "stable"
+  addons:
+  sonarcloud:
+    organization: "shashwat-singh-github"
+    token:
+      secure: "966aad519e44c98b35f6320b617e0e48771caa6c"
+  sauce_connect:
+    username: "Shashwat-Singh"
+    access_key: "38b8b974-feb5-410f-a114-4bf08d08bd53"
+    
+script:
+  - sonar-scanner
